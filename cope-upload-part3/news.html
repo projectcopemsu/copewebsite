@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>News & Newsletters | COPE</title>
+<meta name="description" content="COPE (Communities Organizing for Prevention and Empowerment) at Montclair State University: prevention, education, outreach and youth empowerment in Paterson, NJ.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main" data-page="news">
+<section class="page-head"><div class="wrap"><span class="eyebrow">News</span><h1>Announcements &amp; newsletters</h1></div></section>
+<section class="block"><div class="wrap">
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" id="tab-ann" aria-selected="true" aria-controls="panel-ann">Announcements</button>
+    <button type="button" role="tab" id="tab-nl" aria-selected="false" aria-controls="panel-nl">Newsletters</button>
+  </div>
+  <div id="panel-ann" role="tabpanel" data-render="announcements"></div>
+  <div id="panel-nl" role="tabpanel" hidden><div class="grid" data-render="newsletters"></div></div>
+</div></section>
+<script>
+document.addEventListener("click",function(e){var b=e.target.closest(".tabs [role=tab]");if(!b)return;
+b.parentNode.querySelectorAll("[role=tab]").forEach(function(t){var on=t===b;t.setAttribute("aria-selected",on);document.getElementById(t.getAttribute("aria-controls")).hidden=!on;});});
+</script>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

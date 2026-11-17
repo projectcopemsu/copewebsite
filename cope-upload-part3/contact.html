@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | COPE</title>
+<meta name="description" content="COPE (Communities Organizing for Prevention and Empowerment) at Montclair State University: prevention, education, outreach and youth empowerment in Paterson, NJ.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main" data-page="contact">
+<section class="page-head"><div class="wrap"><span class="eyebrow">Contact</span><h1>Let's talk</h1>
+<p class="lede">Book a workshop, partner with us, join a youth group, or just ask a question.</p></div></section>
+<section class="block"><div class="wrap split">
+  <div class="stack"><div data-render="contactInfo"></div><div class="ph wide" data-src="contact-office.jpg" data-alt="COPE office"></div></div>
+  <form class="form" data-form="Contact">
+    <div class="row">
+      <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div>
+      <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" required></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="c-org">School or organization</label><input id="c-org" name="organization"></div>
+      <div class="field"><label for="c-topic">I'm reaching out about</label>
+        <select id="c-topic" name="topic"><option>Booking a workshop or training</option><option>Partnering with COPE</option><option>Inviting COPE to table at an event</option><option>Joining a meeting or the newsletter</option><option>Bringing a partner into a workshop</option><option>Joining a youth group</option><option>Internships</option><option>Local Legends</option><option>Research or publications</option><option>Something else</option></select></div>
+    </div>
+    <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+    <button class="btn" type="submit">Send message</button>
+    <p class="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

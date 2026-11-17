@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>City Initiatives & Events | COPE</title>
+<meta name="description" content="COPE (Communities Organizing for Prevention and Empowerment) at Montclair State University: prevention, education, outreach and youth empowerment in Paterson, NJ.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main" data-page="community">
+<section class="page-head"><div class="wrap"><span class="eyebrow">City initiatives</span><h1>Out in Paterson</h1>
+<p class="lede">Ongoing community events, tabling across the city, and citywide efforts COPE leads and supports.</p></div></section>
+<section class="block"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">Ongoing</span><h2>Community events</h2></div>
+  <div class="big-num" style="margin-bottom:22px"><div><b>4 years</b><span>of Self-Care Fairs, 2023–2026</span></div><div><b>1,600+</b><span>students at the 2026 fair</span></div><div><b>40</b><span>organizations in 2026</span></div></div>
+  <div class="events" data-render="events"></div>
+</div></section>
+<section class="block tint" id="join"><div class="wrap split">
+  <div class="stack"><span class="eyebrow">Join a meeting</span><h2>Come to the table</h2>
+    <p class="lede">The General Coalition Meeting, P.N.C. and Mental Health Advisory Council meet bi-monthly at the Paterson Public Library, 350 Broadway, or virtually.</p>
+    <p>Ask to join, get our newsletter, and find out when the next meeting is.</p></div>
+  <form class="form" data-form="Meeting & newsletter request">
+    <div class="row">
+      <div class="field"><label for="j-name">Name</label><input id="j-name" name="name" required></div>
+      <div class="field"><label for="j-email">Email</label><input id="j-email" type="email" name="email" required></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="j-org">Organization (optional)</label><input id="j-org" name="organization"></div>
+      <div class="field"><label for="j-meeting">Meeting</label>
+        <select id="j-meeting" name="meeting"><option>General Coalition Meeting</option><option>Paterson Networking Connection (P.N.C.)</option><option>Mental Health Advisory Council</option><option>All of them</option></select></div>
+    </div>
+    <label class="check"><input type="checkbox" id="j-news" name="newsletter" value="yes" checked> Add me to the newsletter</label>
+    <button class="btn" type="submit">Ask to join</button>
+    <p class="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+<section class="block"><div class="wrap split">
+  <div class="stack"><span class="eyebrow">Community tabling</span><h2>We come to you</h2>
+    <p class="lede">COPE sets up education tables wherever the community gathers, with free resources, games and real answers on substance use, mental health and HIV prevention.</p>
+    <div class="chips big"><span class="chip">Trunk or treats</span><span class="chip">Community fairs</span><span class="chip">Block parties</span><span class="chip">Church events</span><span class="chip">Back-to-school events</span><span class="chip">Career fairs</span><span class="chip">And more</span></div>
+    <div><a class="btn" data-href="contact">Invite us to table</a></div></div>
+  <div class="stack">
+    <div class="zoom"><div class="ph wide" data-src="tabling-events.jpg" data-alt="COPE tabling at a community event"></div></div>
+    <div class="mini-gallery two"><div class="zoom"><div class="ph square" data-src="tabling-2.jpg" data-alt="COPE education table"></div></div><div class="zoom"><div class="ph square" data-src="tabling-trunk-or-treat.jpg" data-alt="COPE at a trunk or treat"></div></div></div>
+  </div>
+</div></section>
+<section class="block tint"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">Policy &amp; advocacy</span><h2>City initiatives</h2><p class="lede">Real community change happens at the policy level too.</p></div>
+  <div class="grid two" data-render="cityInitiatives"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

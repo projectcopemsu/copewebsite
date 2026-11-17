@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Local Legends | COPE</title>
+<meta name="description" content="COPE (Communities Organizing for Prevention and Empowerment) at Montclair State University: prevention, education, outreach and youth empowerment in Paterson, NJ.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main" data-page="local-legends">
+<section class="page-head"><div class="wrap"><span class="eyebrow">Local Legends</span><h1>Paterson's <span class="mark">Local Legends</span></h1>
+<p class="lede">An ongoing COPE initiative recognizing the people and places that make our community healthier, safer and stronger.</p></div></section>
+
+<section class="block"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">Three pillars</span><h2>Who gets recognized</h2></div>
+  <div class="pillars" data-render="legendPillars"></div>
+</div></section>
+
+<section class="block tint"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">How it works</span><h2>From nomination to legend</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Nominate</h3><p>Anyone can submit a business or person, and tell us why.</p></div>
+    <div class="step"><h3>Review</h3><p>COPE reviews every nomination.</p></div>
+    <div class="step"><h3>Vote</h3><p>Finalists go to a community vote.</p></div>
+    <div class="step"><h3>Celebrate</h3><p>Legends are honored and featured here.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="nominate"><div class="wrap split">
+  <div class="stack"><span class="eyebrow">Nominate</span><h2>Know a legend?</h2><p class="lede">Tell us who they are and why they matter. Nominations stay open year-round.</p>
+    </div>
+  <form class="form" data-form="Local Legends nomination">
+    <fieldset class="field"><legend>Category</legend>
+      <div class="pillar-pick">
+        <label><input type="radio" name="category" id="cat-biz" value="Business" required><b>Business</b>A local shop or company</label>
+        <label><input type="radio" name="category" id="cat-ind" value="Individual"><b>Individual</b>A person in the community</label>
+        <label><input type="radio" name="category" id="cat-vote" value="Community Vote"><b>Community Vote</b>Put them up for a vote</label>
+      </div></fieldset>
+    <div class="row">
+      <div class="field"><label for="nom-name">Nominee name</label><input id="nom-name" name="nominee_name" required></div>
+      <div class="field"><label for="nom-contact">Nominee contact or location</label><input id="nom-contact" name="nominee_contact" placeholder="Business address, Instagram, phone…"></div>
+    </div>
+    <div class="field"><label for="nom-why">Why are they a Local Legend?</label><textarea id="nom-why" name="why" required placeholder="What have they done for the community?"></textarea></div>
+    <div class="row">
+      <div class="field"><label for="nom-you">Your name</label><input id="nom-you" name="nominator_name" required></div>
+      <div class="field"><label for="nom-email">Your email</label><input id="nom-email" type="email" name="email" required></div>
+    </div>
+    <div class="field"><label for="nom-photo-link">Photo link (optional)</label><input id="nom-photo-link" name="photo_link" type="url" placeholder="Google Drive, Instagram post…"><span class="hint">Share a link to a photo of the nominee.</span></div>
+    <button class="btn" type="submit">Submit nomination</button>
+    <p class="form-status" role="status" hidden></p>
+  </form>
+</div></section>
+
+<section class="block tint"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">Hall of legends</span><h2>Honorees</h2></div>
+  <div class="grid" data-render="legends"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
